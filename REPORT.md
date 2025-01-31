@@ -1,10 +1,10 @@
 **Experimento de Seleção de Modelo para Interpretação Comparativa na Plataforma TaskSense.AI**
 
 ## **1. Introdução**
-Este documento descreve o experimento conduzido para selecionar o modelo mais adequado para interpretação comparativa textual na plataforma **TaskSense.AI for Processes (TSAI)**. O objetivo do estudo é definir qual modelo apresentará maior precisão na identificação de similaridades entre as atividades coletadas pelos agentes da plataforma e as atividades, tarefas, subprocessos e processos definidos no sistema.
+Este documento descreve o experimento conduzido para selecionar o modelo mais adequado para interpretação comparativa textual. O objetivo do estudo é definir qual modelo apresentará maior precisão na identificação de similaridades entre as atividades coletadas pelos agentes da plataforma e as atividades, tarefas, subprocessos e processos definidos no sistema.
 
 ## **2. Objetivo do Experimento**
-A plataforma TSAI busca identificar padrões e similaridades em instâncias de execução de atividades operacionais. Para isso, foi conduzida uma comparação entre diferentes modelos de **Natural Language Inference (NLI)** para identificar qual apresenta melhor performance em ranqueamento de similaridade textual.
+Experimento base para busca e identificaçào de padrões e similaridades em frases de negócio. Para isso, foi conduzida uma comparação entre diferentes modelos de **Natural Language Inference (NLI)** para identificar qual apresenta melhor performance em ranqueamento de similaridade textual.
 
 ## **3. Modelos Avaliados**
 Foram testados os seguintes modelos:
@@ -45,7 +45,7 @@ Isso resultou em um ranking mais coerente, onde a atividade "Baixar relatório f
 ## **6. Conclusão e Modelo Selecionado**
 Com base nos testes realizados, o modelo **DeBERTa (`cross-encoder/nli-deberta-v3-large`)** foi eleito como a melhor opção para ser implementado na plataforma **TaskSense.AI**. Ele apresentou maior coerência na similaridade entre atividades capturadas e atividades definidas no sistema.
 
-O próximo passo será a integração desse modelo nas **pipelines de interpretação comparativa por similaridade**, permitindo a identificação precisa de instâncias de atividades e tarefas operacionais na TSAI.
+O próximo passo será a integração desse modelo nas **pipelines de interpretação comparativa por similaridade**, permitindo a identificação precisa de instâncias de atividades e tarefas operacionais de negócio.
 
 ## **7. Referências**
 - [Documentação oficial do modelo DeBERTa](https://huggingface.co/cross-encoder/nli-deberta-v3-large)
