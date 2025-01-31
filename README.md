@@ -6,7 +6,7 @@ Este projeto implementa um experimento comparativo entre três modelos de infer�
 - **RoBERTa** (`joeddav/xlm-roberta-large-xnli`)
 - **DeBERTa** (`cross-encoder/nli-deberta-v3-large`)
 
-Os experimentos utilizam a infraestrutura configurada no disco `/saswdata`, que abriga o ambiente de desenvolvimento e os modelos utilizados.
+Os experimentos utilizam a infraestrutura configurada em home (~), que abriga o ambiente de desenvolvimento e os modelos utilizados no ambiente atual.
 
 ## 📂 Estrutura do Laboratório
 O laboratório foi configurado conforme a seguinte estrutura:
